@@ -2,6 +2,8 @@
   width: 100%;
   background-color: black;
   flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
   padding: 16px;
 }
 .container-footer > a {

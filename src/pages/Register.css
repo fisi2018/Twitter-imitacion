@@ -28,6 +28,7 @@
   min-width: 45rem;
   background-color: black;
   padding: 32px;
+  display: flex;
 }
 .container-no-footer {
   display: flex;
@@ -82,4 +83,23 @@
 .text-span-register {
   font-weight: bolder;
   margin-left: 10px;
+}
+@media screen and (max-width: 980px) {
+  .container-no-footer {
+    flex-direction: column-reverse;
+  }
+  .container-register {
+    min-width: 100%;
+    justify-content: center;
+  }
+  .logo-big {
+    width: 5rem;
+  }
+}
+@media screen and (max-width: 580px) {
+  .tittle-span,
+  .subtittle-span,
+  .container-button {
+    width: 100%;
+  }
 }
