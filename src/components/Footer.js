@@ -9,9 +9,9 @@ export const Footer=()=>{
             <a href="www.twitter.com">Política de cookies</a>
             <a href="www.twitter.com">Información de anuncios</a>
             <a href="www.twitter.com">Blog</a>
-            <a href="">Estado</a>
-            <a href="">Empleos</a>
-            <a href="">Recursos para marcas</a>
+            <a href="www.twitter.com">Estado</a>
+            <a href="www.twitter.com">Empleos</a>
+            <a href="www.twitter.com">Recursos para marcas</a>
         </footer>
     )
 }

@@ -63,7 +63,8 @@
 }
 .button-register {
   display: flex;
-  outline: 0;
+  text-decoration: none;
+  color: black;
   border: 0;
   height: 100%;
   cursor: pointer;
@@ -90,16 +91,35 @@
   }
   .container-register {
     min-width: 100%;
+    width: 100%;
     justify-content: center;
   }
   .logo-big {
     width: 5rem;
   }
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 540px) {
   .tittle-span,
   .subtittle-span,
-  .container-button {
+  .container-button,
+  .text-terminos-div {
     width: 100%;
+  }
+
+  .container-button {
+    padding: 0 0.5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .button-register > span {
+    max-width: 4rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    white-space: nowrap;
+    line-height: 20px;
+  }
+  .logo-google {
+    width: 1rem;
   }
 }
