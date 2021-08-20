@@ -1,11 +1,14 @@
 import "./Login.css";
 import {useForm} from "../hooks/useForm";
+
 const initialForm={
     email:"",
     password:""
 }
 export const Login=()=>{
-    const { pasive, animation,form,handleFocus,handleChange,handleBlur}=useForm(initialForm);
+    
+    const {button, pasive, animation,form,handleFocus,handleChange,handleBlur,loginButton,handleSubmit}=useForm(initialForm);
+    
     return(
         <div className="container-login">
             <div className="container-login-main" >
@@ -18,7 +21,7 @@ export const Login=()=>{
                     <h1>Iniciar sesión en Twitter</h1>
                 </div>
                 <div className="container-form" >
-                    <form className="form-login" action="">
+                    <form onSubmit={handleSubmit} className="form-login"  >
                         <div className="container-input">
                             <div className={`input-design ${animation.email && `selected`} ${pasive.email && `pasive-mode-div`} `}>
                                 <p className={`text-animation ${animation.email && `activate-text`} ${pasive.email && `pasive-mode`} ` }> Correo o usuario</p>
@@ -33,7 +36,7 @@ export const Login=()=>{
                             </div>
                             <div className="container-input">
 
-                        <button className="button-input-login" >Iniciar sesión</button>
+                        <button onClick={loginButton} ref={button} disabled={(form.email==="" || form.password==="") && "true" } className="button-input-login"  >Iniciar sesión</button> 
                             </div>
                     </form>
                 </div>

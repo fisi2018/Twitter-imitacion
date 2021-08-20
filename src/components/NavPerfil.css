@@ -1,0 +1,51 @@
+.container-nav-perfil {
+  display: flex;
+  position: sticky;
+  width: 4rem;
+  padding: 0.25rem;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.subcontainer-nav-perfil {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.container-write {
+  width: 100%;
+}
+.circle-write {
+  background-color: #1a91da;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.element-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem;
+}
+.nav-perfil-element {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  width: 2.5rem;
+}
+.img-element-perfil {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.container-photo-perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

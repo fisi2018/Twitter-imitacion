@@ -1,6 +1,7 @@
-import { useState,useEffect } from "react";
+import { useState,useEffect,useRef } from "react";
 export const useForm=(initialForm)=>{
     const [form,setForm]=useState(initialForm);
+    const button=useRef();
     const [pasive,setPasive]=useState({
         email:false,
         password:false
@@ -39,6 +40,16 @@ export const useForm=(initialForm)=>{
             })
         }
     }
+    const handleSubmit=(e)=>{
+        e.preventDefault();
+    }
+    const loginButton=()=>{
+        
+        localStorage.setItem("logged",true);
+        localStorage.setItem("email",form.email);
+        localStorage.setItem("password",form.password);
+        window.location.replace("/home");
+    }
     const handleFocus=(e)=>{
         const {name}=e.target;
         setAnimation({
@@ -52,13 +63,22 @@ export const useForm=(initialForm)=>{
             ...form,
             [name]:value
         })
+        if(form.email!=="" && form.password!==""){
+            button.current.disabled=false;
+        }
+        else{
+            button.current.disabled=true;
+        }
     }
     return{
+        button,
         animation,
         pasive,
         form,
         handleChange,
         handleFocus,
-        handleBlur
+        handleBlur,
+        loginButton,
+        handleSubmit
     }
 }
