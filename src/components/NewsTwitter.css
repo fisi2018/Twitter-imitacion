@@ -1,0 +1,95 @@
+.container-news-twitter {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+}
+.header-inicio-element {
+  position: sticky;
+  display: flex;
+  border-style: solid;
+  border-color: #2f3336;
+  border-width: 0 1px 1px 1px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: 3rem;
+  width: 100%;
+}
+.tittle-inicio-element {
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.logo-destacado {
+  width: 1.5rem;
+}
+.container-write-action {
+  width: 100%;
+  display: flex;
+  border-style: solid;
+  border-width: 0 1px 1px 1px;
+  border-color: #2f3336;
+  height: 8rem;
+}
+.container-photo-twitte {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+  width: 4rem;
+  height: 100%;
+}
+.container-write-aside {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.container-nav-tools {
+  display: flex;
+  padding: 00.25rem 0;
+  height: 3.5rem;
+  border-top: 1px solid #2f3336;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-element-tools {
+  width: 11rem;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.nav-element-tools > button {
+  background-color: transparent;
+  width: 1.25rem;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tool-element {
+  width: 100%;
+}
+.button-input-login {
+  width: 7rem;
+}
+.input-twitte-element {
+  background-color: transparent;
+  height: 2rem;
+  outline: 0;
+  color: #d9d9d9;
+  font-size: 18px;
+  border: 0;
+}
+.container-input-twitte {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.size-s {
+  padding: 0.5rem 0;
+  height: 2rem;
+  width: 5.5rem;
+}
