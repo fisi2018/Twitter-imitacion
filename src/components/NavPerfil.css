@@ -1,9 +1,11 @@
 .container-nav-perfil {
   display: flex;
   position: sticky;
+  height: 100vh;
   width: 4rem;
   padding: 0.25rem;
-  min-height: 100vh;
+  top: 0;
+  bottom: 0;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -45,6 +47,7 @@
 }
 .container-photo-perfil {
   display: flex;
+  margin-bottom: 2rem;
   justify-content: center;
   align-items: center;
   width: 100%;

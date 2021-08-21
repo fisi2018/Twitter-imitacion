@@ -1,4 +1,6 @@
 import "./NewsTwitter.css";
+import {list} from "../DB";
+import { Twitte } from "./Twitte";
 export const NewsTwitter=()=>{
     return(
         <div className="container-news-twitter" >
@@ -69,7 +71,9 @@ export const NewsTwitter=()=>{
                     </div>
             </div>
             <div className="container-all-twittes" >
-
+                {list.map((twitte)=>(
+                    <Twitte twitte={twitte} />
+                ))}
             </div>
         </div>
     )

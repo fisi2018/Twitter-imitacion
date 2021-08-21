@@ -1,0 +1,68 @@
+.container-twitte {
+  border: 1px solid #2f3336;
+  width: 100%;
+  display: flex;
+}
+.container-twitte-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.content-header-twitte {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.name-twitte-element {
+  color: #d9d9d9;
+  font-weight: bolder;
+  font-size: 14px;
+}
+.email-twitte-element,
+.date-twitte-element {
+  color: #6e767d;
+  font-size: 12px;
+}
+.content-info-twitte > * {
+  margin-right: 0.5rem;
+}
+.content-info-twitte {
+  max-width: 90%;
+  align-items: center;
+  display: flex;
+}
+.svg-points {
+  width: 1rem;
+}
+.text-twitte {
+  color: #d9d9d9;
+  font-size: 14px;
+}
+.actions-nav {
+  width: 100%;
+  display: flex;
+  padding: 0.5rem 0;
+}
+.action-tool-twitte {
+  background-color: transparent;
+  width: 3rem;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: 0;
+  border: 0;
+}
+.action-tool-twitte > svg {
+  width: 1rem;
+}
+.action-tool-twitte > p {
+  color: #6e767d;
+  font-size: 12px;
+}
+.img-twitte {
+  width: 100%;
+  border-radius: 5px;
+  height: auto;
+  margin: 1rem 0 0 0;
+}

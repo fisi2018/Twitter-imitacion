@@ -1,10 +1,13 @@
 .container-news-twitter {
   display: flex;
   flex-direction: column;
-  width: 25rem;
+  width: 35rem;
 }
 .header-inicio-element {
   position: sticky;
+  z-index: 999;
+  top: 0;
+  background-color: black;
   display: flex;
   border-style: solid;
   border-color: #2f3336;
@@ -22,6 +25,7 @@
 }
 .logo-destacado {
   width: 1.5rem;
+  background-color: black;
 }
 .container-write-action {
   width: 100%;
