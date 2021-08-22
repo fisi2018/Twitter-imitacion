@@ -1,4 +1,6 @@
 import "./Trending.css";
+import {Link} from "react-router-dom";
+import {trendingDB} from "../TrendingDB";
 export const Trending=()=>{
     return(
         <div className="container-trending" >
@@ -20,6 +22,27 @@ export const Trending=()=>{
                         </g>
                     </svg>
                 </header>
+                {trendingDB.map((trend,index)=>(
+                    <Link className="link-trend" >
+                        <div className="container-tittle-trend" >
+                            <span>
+                                <p>{index+1}</p>
+                                ·
+                                {trend.category!=="" && <><p> {trend.category} </p> ·</>}
+                                <p>Tendencia</p>
+                            </span>
+                            <svg viewBox="0 0 24 24" >
+                                <g>
+                                    <circle fill="#6E767D" cx="5" cy="12" r="2" ></circle>
+                                    <circle fill="#6E767D" cx="12" cy="12" r="2"></circle>
+                                    <circle fill="#6E767D" cx="19" cy="12" r="2"></circle>
+                                </g>
+                            </svg>
+                        </div>
+                        <p className="text-trending" > {trend.textTrending} </p>
+                        <p className="cantidad-trending" > {trend.cantidadTwittes} </p>
+                    </Link>
+                ))}
             </div>
         </div>
     )

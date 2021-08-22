@@ -27,7 +27,7 @@
 .container-input-search > svg {
   position: absolute;
   top: 1.5rem;
-  left: 1.5rem;
+  left: 2.5rem;
   width: 1rem;
 }
 .container-trend-elements {
@@ -53,4 +53,42 @@
 }
 .header-trending > svg {
   width: 1rem;
+}
+.link-trend {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  background-color: #15181c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  height: 5.5rem;
+}
+.link-trend:hover {
+  background-color: #1c1f23;
+}
+.container-tittle-trend {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container-tittle-trend > span {
+  display: flex;
+  color: #6e767d;
+  font-size: 14px;
+}
+.container-tittle-trend > span > p {
+  margin-right: 0.25rem;
+}
+.container-tittle-trend > svg {
+  width: 1rem;
+}
+.text-trending {
+  color: #d9d9d9;
+  font-weight: bolder;
+}
+.cantidad-trending {
+  color: #6e767d;
+  font-size: 14px;
 }

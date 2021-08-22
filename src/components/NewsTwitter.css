@@ -97,3 +97,10 @@
   height: 2rem;
   width: 5.5rem;
 }
+.style-hover {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.style-hover:hover {
+  opacity: 0.8;
+}

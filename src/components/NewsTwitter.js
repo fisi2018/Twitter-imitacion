@@ -14,7 +14,7 @@ export const NewsTwitter=()=>{
             </header>
             <div className="container-write-action" >
                     <div className="container-photo-twitte" >
-                        <img className="img-element-perfil" src="https://placeimg.com/640/480/people" alt="profile"/>
+                        <img className="img-element-perfil style-hover" src="https://placeimg.com/640/480/people" alt="profile"/>
                     </div>
                     <div className="container-write-aside" >
                         <div className="container-input-twitte" >

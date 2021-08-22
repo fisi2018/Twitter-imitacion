@@ -3,7 +3,7 @@ export const Twitte=({twitte})=>{
     return(
         <div className="container-twitte" >
             <div className="container-photo-twitte" >
-                <img className="img-element-perfil" src={twitte.imgProfile} alt="profile"/>
+                <img className="img-element-perfil style-hover" src={twitte.imgProfile} alt="profile"/>
             </div>
             <div className="container-twitte-main">
                 <header className="content-header-twitte">
