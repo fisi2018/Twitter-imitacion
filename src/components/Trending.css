@@ -92,3 +92,8 @@
   color: #6e767d;
   font-size: 14px;
 }
+@media screen and (max-width: 920px) {
+  .container-trending {
+    display: none;
+  }
+}

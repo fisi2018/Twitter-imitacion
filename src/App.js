@@ -7,8 +7,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={Register} />
-        {localStorage.getItem("logged")==="true" ? <Route exact path="/home" component={Home} /> : <Route exact path="/login" component={Login} />}
+        {localStorage.getItem("logged")==="true" ? <Route exact path="/home" component={Home} /> : <><Route exact path="/" component={Register} /><Route exact path="/login" component={Login} /></>}
       </Switch>
     </Router>
   );

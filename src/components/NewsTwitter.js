@@ -1,7 +1,45 @@
 import "./NewsTwitter.css";
+import {useState} from "react";
 import {list} from "../DB";
 import { Twitte } from "./Twitte";
 export const NewsTwitter=()=>{
+    const [form, setForm] = useState({
+        tweet:""
+    });
+    const [db, setDb]=useState(list);
+    const addTweet=()=>{
+       const string=localStorage.getItem("email");
+        const objTweet={
+            email:string,
+        name:localStorage.getItem("name"),
+        imgProfile:"https://placeimg.com/640/480/people",
+        date:"1min",
+        content:{
+            imgContent:"",
+            textContent:form.tweet
+        },
+        reactions:{
+            likes:"0",
+            retwittes:"0",
+            comments:"0"
+        }
+        }
+        const copyDB=[];
+        copyDB.push(objTweet);
+        db.forEach((el)=>{
+            copyDB.push(el);
+        });
+        console.log("ANTES DEL STATE");
+        setDb(copyDB);
+        console.log("DESPUES DEL STATE" , copyDB, db);
+    }
+    const handleChange=(e)=>{
+        const {name,value}=e.target;
+        setForm({
+            ...form,
+            [name]:value
+        });
+    }
     return(
         <div className="container-news-twitter" >
             <header className="header-inicio-element">
@@ -18,7 +56,7 @@ export const NewsTwitter=()=>{
                     </div>
                     <div className="container-write-aside" >
                         <div className="container-input-twitte" >
-                            <input className="input-twitte-element"  type="text" placeholder="¿Qué está pasando?" />
+                            <input name="tweet" onChange={handleChange} className="input-twitte-element"  type="text" placeholder="¿Qué está pasando?" />
                         </div>
                         <div className="container-nav-tools" >
                             <nav className="nav-element-tools">
@@ -66,12 +104,12 @@ export const NewsTwitter=()=>{
                                     </svg>
                                 </button>
                             </nav>
-                            <button className="button-input-login size-s" disabled >Twittear</button>
+                            <button onClick={addTweet} className="button-input-login size-s" disabled={form.tweet==="" && "true" } >Twittear</button>
                         </div>
                     </div>
             </div>
             <div className="container-all-twittes" >
-                {list.map((twitte)=>(
+                {db.map((twitte)=>(
                     <Twitte twitte={twitte} />
                 ))}
             </div>

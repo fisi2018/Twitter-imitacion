@@ -24,7 +24,7 @@ h1 {
 .container-input {
   position: relative;
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .input-design {
   width: 100%;
@@ -45,7 +45,7 @@ h1 {
   width: 100%;
 }
 .input {
-  top: 2.5rem;
+  top: 2rem;
   outline: 0;
   height: 2rem;
   padding: 1rem;
@@ -79,7 +79,7 @@ h1 {
 .activate-text {
   position: absolute;
   color: rgb(29, 161, 242);
-  top: 1.5rem;
+  top: 1rem;
   font-size: 10px;
 }
 .pasive-mode {

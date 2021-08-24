@@ -3,6 +3,7 @@
   padding-top: 1rem;
   padding-right: 0.25rem;
   width: 100%;
+  cursor: pointer;
   display: flex;
 }
 .container-twitte-main {
@@ -60,9 +61,31 @@
 .action-tool-twitte > svg {
   width: 1rem;
 }
+.action-tool-twitte > svg > g > path {
+  transition: all 0.3s ease;
+}
 .action-tool-twitte > p {
   color: #6e767d;
   font-size: 12px;
+  transition: all 0.3s ease;
+}
+.action-tool-twitte:nth-child(1):hover > p {
+  color: #1da1f2;
+}
+.action-tool-twitte:nth-child(1):hover > svg > g > path {
+  fill: #1da1f2;
+}
+.action-tool-twitte:nth-child(2):hover > p {
+  color: #17bf63;
+}
+.action-tool-twitte:nth-child(2):hover > svg > g > path {
+  fill: #17bf63;
+}
+.action-tool-twitte:nth-child(3):hover > p {
+  color: #bc1f50;
+}
+.action-tool-twitte:nth-child(3):hover > svg > g > path {
+  fill: #bc1f50;
 }
 .img-twitte {
   width: 100%;

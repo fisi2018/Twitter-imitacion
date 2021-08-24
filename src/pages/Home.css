@@ -3,3 +3,8 @@
   justify-content: space-evenly;
   width: 50rem;
 }
+@media screen and (max-width: 640px) {
+  .container-main-home {
+    width: 100%;
+  }
+}

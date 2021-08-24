@@ -1,6 +1,12 @@
 import {Link} from "react-router-dom";
 import "./NavPerfil.css";
 export const NavPerfil=()=>{
+    const logout=()=>{
+        localStorage.removeItem("email");
+        localStorage.removeItem("password");
+        localStorage.removeItem("logged");
+        window.location.replace("/");
+    }
     return(
         <div className="container-nav-perfil" >
             <div className="subcontainer-nav-perfil">
@@ -72,8 +78,8 @@ export const NavPerfil=()=>{
                         </Link>
                 </div>
             </div>
-            <div className="container-photo-perfil" >
-                    <img className="img-element-perfil"  src="https://placeimg.com/640/480/people" alt="profile"/>
+            <div className="container-photo-perfil " >
+                    <img onClick={logout} className="img-element-perfil logout-style "  src="https://placeimg.com/640/480/people" alt="profile"/>
             </div>
         </div>
     )

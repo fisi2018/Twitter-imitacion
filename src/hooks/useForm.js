@@ -44,9 +44,11 @@ export const useForm=(initialForm)=>{
         e.preventDefault();
     }
     const loginButton=()=>{
-        
+        const email=`@`+form.email.split("@")[0];
         localStorage.setItem("logged",true);
-        localStorage.setItem("email",form.email);
+        localStorage.setItem("correo",form.email);
+        localStorage.setItem("email",email);
+        localStorage.setItem("name",form.name);
         localStorage.setItem("password",form.password);
         window.location.replace("/home");
     }

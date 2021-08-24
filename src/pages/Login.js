@@ -23,6 +23,12 @@ export const Login=()=>{
                 <div className="container-form" >
                     <form onSubmit={handleSubmit} className="form-login"  >
                         <div className="container-input">
+                            <div className={`input-design ${animation.name && `selected`} ${pasive.name && `pasive-mode-div`} `}>
+                                <p className={`text-animation ${animation.name && `activate-text`} ${pasive.name && `pasive-mode`} ` }> Nombre </p>
+                                <input onFocus={handleFocus} value={form.name} onBlur={handleBlur} onChange={handleChange} name="name" className="input" type="text" required/>
+                            </div>
+                            </div>
+                        <div className="container-input">
                             <div className={`input-design ${animation.email && `selected`} ${pasive.email && `pasive-mode-div`} `}>
                                 <p className={`text-animation ${animation.email && `activate-text`} ${pasive.email && `pasive-mode`} ` }> Correo o usuario</p>
                                 <input onFocus={handleFocus} value={form.email} onBlur={handleBlur} onChange={handleChange} name="email" className="input" type="email" required/>

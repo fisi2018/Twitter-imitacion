@@ -58,5 +58,28 @@
   margin-bottom: 2rem;
   justify-content: center;
   align-items: center;
+  position: relative;
   width: 100%;
+}
+.logout-style {
+  cursor: pointer;
+}
+.container-photo-perfil::before {
+  content: "Cerrar sesión";
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  font-size: 12px;
+  width: 5rem;
+  height: 1rem;
+  color: white;
+  background-color: #757781;
+  font-weight: lighter;
+  opacity: 0;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+.container-photo-perfil:hover::before {
+  transform: translateY(-2rem);
+  opacity: 1;
 }
